@@ -196,9 +196,18 @@ const ResultView: React.FC<{ result: DiagnosisResult }> = ({ result }) => {
               <span className="font-semibold text-stone-900">「二の腕タイプ別アドバイス」</span>を<br />
               LINEで無料でお伝えしています。
             </p>
-            <button className="w-full md:w-auto px-12 py-4 bg-stone-900 text-white font-bold tracking-widest hover:bg-stone-800 transition-all flex items-center justify-center gap-2 mx-auto">
+            <p className="text-stone-500 text-xs mb-4 leading-relaxed">
+              ✨ 公式LINE登録特典 ✨<br />
+              クーポンと質問に答えてくれるチャットAIをご用意しています
+            </p>
+            <a 
+              href="https://lin.ee/vLgcZ4o" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full md:w-auto px-12 py-4 bg-stone-900 text-white font-bold tracking-widest hover:bg-stone-800 transition-all flex items-center justify-center gap-2 mx-auto inline-block"
+            >
               <LucideChevronRight size={20} /> 無料で受け取る
-            </button>
+            </a>
           </>
         ) : (
           <>
@@ -209,9 +218,14 @@ const ResultView: React.FC<{ result: DiagnosisResult }> = ({ result }) => {
               6〜8回でどんな変化をしたか<br />
               体験ベースでご説明できます。
             </p>
-            <button className="w-full md:w-auto px-12 py-4 bg-stone-900 text-white font-bold tracking-widest hover:bg-stone-800 transition-all flex items-center justify-center gap-2 mx-auto">
-              <LucideCalendar size={20} /> 無料カウンセリングを予約する
-            </button>
+            <a 
+              href="https://lin.ee/vLgcZ4o" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full md:w-auto px-12 py-4 bg-stone-900 text-white font-bold tracking-widest hover:bg-stone-800 transition-all flex items-center justify-center gap-2 mx-auto inline-block"
+            >
+          <LucideCalendar size={20} /> 無料カウンセリングを予約する
+            </a>
           </>
         )}
         <p className="mt-4 text-[10px] text-stone-400 uppercase tracking-widest">Limited availability for new clients</p>
